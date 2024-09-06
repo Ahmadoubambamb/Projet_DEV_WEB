@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>contactez-nous</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="contacte.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="images/" alt="">
+            <h1>Nous sommes ravis de recevoir vos suggestions </h1>
+        </header>
+        <div class="p1">
+            <h2>Remplissez le Formulaire svp:</h2>
+            <form action="mailto:ufr.sat@ugb.edu.sn" method="post">
+                <label for="code">Code Etudiant(e):</label><br>
+                <input type="text" pattern="^[P]*[1-9]{3-6}" required><br>
+                <label for="email">Email UGB:</label><br>
+                <input type="text" required>
+                <legend>Votre Niveau:<br>
+                <label for="Niveau">L1</label>
+                <input type="radio" name="Niveau">
+                <label for="Niveau">L2</label>
+                <input type="radio" name="Niveau">
+                <label for="Niveau">L3</label>
+                <input type="radio" name="Niveau">
+                <label for="Niveau">M1</label>
+                <input type="radio" name="Niveau">
+                <label for="Niveau">M2</label>
+                <input type="radio" name="Niveau">
+              </legend>
+              <textarea name="objet de demande" id="demande" cols="60" rows="25"></textarea><br>
+              <input type="reset" value="annuler">
+              <input type="submit" value="valider">
+            </form>
+           <img src="images/image_fond.jpg" alt="communication">
+          
+        </div>
+        <footer>
+            <p>&copy; 2024 UFR SAT.Sciences & Technologies</p>
+        <script>
+            var date_jour = new Date();
+            document.write("Vous êtes connecté à :" + date_jour);
+        </script>
+        </footer>
+    </body>
+
+</html>

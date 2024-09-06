@@ -1,0 +1,134 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backdiv {
+    background-image: url(images/Ugb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: 1fr; /* Colonne unique par défaut */
+    grid-template-rows: auto;
+}
+
+.dbody1 {
+    background-color: white;
+    border-radius: 5px;
+    border-right: 25px solid blanchedalmond;
+    border-bottom: 5px solid blanchedalmond;
+}
+
+.levl {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.logo25 {
+    margin: 10px;
+    height: 100px;
+}
+
+div > details {
+    border: 15px solid rgb(218, 177, 125);
+    border-radius: 25px;
+    margin: 21px;
+    padding: 18px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: rgb(0, 47, 255);
+}
+
+footer {
+    background-color: hsl(22, 39%, 49%);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 3px 7px 3px black;
+    color: rgb(236, 167, 117);
+    border: 10px solid rgb(236, 167, 117);
+    border-radius: 15px;
+    font-size: 50px;
+    background-color: antiquewhite;
+    opacity: 70%;
+}
+
+h2::first-letter {
+    font-style: oblique;
+    font-size: 80px;
+    color: rgb(255, 251, 7);
+}
+
+h3 {
+    text-align: center;
+    text-shadow: 8px 5px 5px black;
+    color: rgb(233, 168, 48);
+    font-size: 33px;
+    opacity: 90%;
+}
+
+/* Responsive pour les tablettes */
+@media (min-width: 768px) {
+    .div1 {
+        grid-template-columns: 20% 80%;
+    }
+
+    .logo25 {
+        height: 80px;
+    }
+}
+
+/* Responsive pour les mobiles */
+@media (max-width: 767px) {
+    .div1 {
+        grid-template-columns: 1fr;
+    }
+
+    .logo25 {
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .levl {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    div > details {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

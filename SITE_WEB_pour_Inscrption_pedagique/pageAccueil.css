@@ -1,0 +1,276 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dde7dd;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(22, 39%, 49%);
+    height: 70px;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.user-nav ul li {
+    position: relative;
+}
+
+.user-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.user-nav ul li a:hover {
+    text-decoration:rgb(165, 21, 21);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.user-nav{
+    margin-right: 100px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a i {
+    
+   color: rgb(23, 23, 159);
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.page3_1 {
+    border: 2px solid black;
+    height: 150px;
+    float: right;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f5feff;
+}
+
+.page3_2 {
+    border: 0.5px solid black;
+    height: 800px;
+    float: left;
+    width: 19%;
+    border-radius: 5px;
+    background-color: #C1E1C1;
+}
+
+.page3_3 {
+    border: 0.5px solid black;
+    height: 646px;
+    float: right;
+    width: 80%;
+    margin: 2px;
+    border-radius: 5px;
+    display: contents;
+}
+
+.page3_2 li {
+    text-align: left;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.page3_3 a {
+    display: block;
+    border: 2px solid black;
+    height: 120px;
+    float: left;
+    width: 14.5%;
+    margin: 8px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 30px;
+    background-color: hsl(22, 39%, 49%);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page3_3 a:hover {
+    background-color: rgb(35, 35, 172);
+    color: white;
+}
+
+.image1_droite {
+    float: right;
+    margin: 1px;
+    display: flex;
+    height: 148px;
+}
+
+.image1_gauche {
+    float: left;
+    margin-top: 0%;
+    display: flex;
+    height: 60px;
+}
+
+.logo25 {
+    margin: 10px;
+    display: flex;
+    height: 200px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.page3_3_1, .page3_3_2, .page3_3_3, .page3_3_4, .page3_3_5, .page3_3_6 {
+    font-size: smaller;
+}
+
+footer {
+    background-color: hsl(22, 39%, 49%);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries pour responsive design */
+@media (max-width: 1200px) {
+    .page3_1, .page3_3 {
+        width: 100%;
+    }
+
+    .page3_2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .page3_3 a {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 0.5em;
+    }
+
+    .user-nav {
+        margin-top: 10px;
+    }
+
+    .page3_1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .page3_1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .page3_2 {
+        width: 100%;
+        float: none;
+    }
+
+    .page3_3 {
+        width: 100%;
+        float: none;
+    }
+
+    .page3_3 a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .image1_gauche, .image1_droite, .logo25 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .page3_1 {
+        padding: 1em;
+    }
+
+    .page3_3 a {
+        font-size: 14px;
+        line-height: 100px;
+        height: 100px;
+    }
+
+    .page3_2 li {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .user-nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .user-nav ul li {
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-content a {
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin: 5px 0;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+}

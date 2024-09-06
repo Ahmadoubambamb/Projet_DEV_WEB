@@ -1,0 +1,65 @@
+.entete{
+    height: 200px;
+  
+}
+image{
+    float: left;
+}
+.diva{
+    float: right;
+  margin-right: 500px;
+  height: 200px;
+  width: 400px;
+  margin-top: 20px;
+
+
+}
+.photo
+{float: right;
+    text-align:center;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.partie2{
+    margin-top: 10px;
+    height: 50px;
+   
+}
+.partie2a{
+    float: left;
+
+}
+.partie2b{
+    float: right;
+    margin-right: 200px;
+
+}
+form{
+    margin-top: 60px;
+}
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+td{
+    text-align: center;
+}
+span{
+    margin-left: 600px;
+}
+.global
+    {height: 100%;
+    width: 100%;
+   border: outset;}
+
+   .nb{
+    margin-left: 20px;
+    color:red;
+    font-weight: bold;
+}

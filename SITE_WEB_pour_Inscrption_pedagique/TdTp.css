@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(184, 211, 211);
+}
+.fbody1{
+   display:flex;
+}
+.cote{
+    margin-left:150px;
+
+}
+caption{
+    text-align: left;
+}
+
+h1
+{  color: rgb(154, 185, 83);
+    text-align:center ;
+    text-shadow: 20px;
+    text-decoration-line: underline;
+    text-anchor: start;
+
+}

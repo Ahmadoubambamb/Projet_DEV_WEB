@@ -1,0 +1,59 @@
+body{ display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100dvb;
+    background-image: url(images/jardinSat.jpg) ;
+    background-size: cover;
+}
+
+form{ display: flex ;
+    flex-direction: column;
+    background-color:beige;
+    opacity: 70%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0,0, 2) ;
+}
+
+.name-field {
+display: flex;
+width: 100%;
+column-gap:6px ;
+}
+
+h1{
+    text-align: center;
+    background-color: blanchedalmond;
+    color:brown;
+    font-size: 40px;
+    box-shadow: 0 0 20px rgb(50, 59, 138);
+}
+
+label{
+    margin-bottom: 15px;
+}
+
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0,0, 4);
+    border-style:dashed;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color:greenyellow;
+    border: 2px solid green;
+   cursor: pointer;
+   font-size: 20px;
+   box-shadow: 0 0 20px rgb(50, 59, 138);
+}
+label{
+   font-weight: bold;
+   font-size: medium;
+}

@@ -1,0 +1,46 @@
+body
+{
+ padding: 0px;
+ margin: 0px;
+ margin-top: 0px;
+ width: 100%;
+ height:100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+img{
+  width:100%;
+  display: flex;
+  height:auto;
+}
+
+h1{
+    background-color: brown;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    background-color:  hsl(22, 39%, 49%);
+}
+
+
+
+
+
+
+
+
+

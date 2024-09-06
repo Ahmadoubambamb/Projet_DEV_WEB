@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title> Fiche dinscription </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="fichecss.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="fiche">
+            <div class="entete">
+                <img src="ugb.png" rel="LOGO de lUGB">
+                <div class="titre"> UNIVERSITE GASTON BERGER DE SAINT-LOUIS
+                     UFR DES SCIENCES APPLIQUEES ET DE TECHNOLOGIE
+                     Tel : 33 961 23 40         Fax: 33 961 53 38
+                </div>
+                <div class="photo">
+                     <p style="text-align: center;"> photo </p>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <span> Grade : Licence </span> <br>
+                    <span> Mention : INFORMATIQUE </span> <br>
+                </div>
+                <div  class="div3">
+                    <span> Domaine :Sciences et Technologies </span> <br>
+                    <span> Specialite :</span> <br>
+                    <span style="font-weight: bold;"> Parcours :Systeme dinformation </span> <br>
+                </div>
+            </div>
+            <form method="post" action="mailto:hamzamahamatsaleh36@gmail.com " name="ficheInscription">
+                <div class="remplir">
+                    <label for="nom"> Nom et Prenom          : </label>
+                    <input type="text" name="nom" required pattern="[a-z A-Z]+"> <br>
+                    <label for="Notionalite"> Nationalite             :</label>
+                    <input type="text" name="Nationalite" required pattern="[a-z A-Z]+"> <br>
+                    <label for="Date de naissance"> Date de naissance             :</label>
+                    <input type="date" name="Date de naissance" required > &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <label for="Telephone"> Telephone             :</label>
+                    <input type="number" name="Telephone" required> <br>
+                    <label for="lieu de naissance"> Lieu de naissance             :</label>
+                    <input type="text" name="Lieu de naissance" required > <br>
+                    <label for="serie"> Bac serie            :</label>
+                    <input type="text" name="serie" required>              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <label for="id"> Numero ID            :</label>
+                    <input type="text" name="id" required pattern="^(P)[0-9]+"> <br>
+                    <label for="Adresse"> Adresse au campus           :</label>
+                    <input type="text" name="Adresse" required >         &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <label for="Advacance"> Adresse au vacances           :</label>
+                    <input type="text" name="Advacance" required >  <br>
+                    <label for="urgence"> Prenom,Nom,e-mail et Telephone (Personne a contacter en cas durgence)          :</label>
+                    <input type="text" name="urgence" required >  <br>
+                    <br>
+                    <label for="dateInscription"> Date dinscription           :</label>
+                    <input type="date" name="dateInscription" required >  <br>
+                    <br>
+                    <span> Redoublant </span>  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <input type="radio" name="passage"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <span> Passant </span>  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <input type="radio" name="passage">  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <span> Passage conditionnel </span>  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                    <input type="radio" name="passage"> 
+                </div>
+                <br>
+                <div class="table-responsive">
+                <table border="2">
+                    <caption align="top"> Semestre </caption>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td rowspan="2" class="Engras">UE</td>
+                        <td rowspan="2" class="Engras">Code UE </td>
+                        <td rowspan="2" class="Engras">Credits</td>
+                        <td rowspan="2" class="Engras">EC</td>
+                        <td rowspan="2" class="Engras">Coef</td>
+                        <td colspan="6" class="Engras"> Masse horaire semestrielle </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> CM </td>
+                        <td> TD </td>
+                        <td> TP </td>
+                        <td> Projet </td>
+                        <td> VHPRES </td>
+                        <td> TPE </td>
+                        <td> VHTOT </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="choix"> </td>
+                        <td> Architecture des ordinateurs III  </td>
+                        <td>INFO351</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>14</td>
+                        <td>4</td>
+                        <td>48</td>
+                        <td>32</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="checkbox" name="choix"></td>
+                        <td rowspan="2">Mathematiques pour linformatique II</td>
+                        <td rowspan="2">INFO352</td>
+                        <td rowspan="2">6</td>
+                        <td>Recherche operationnelle</td>
+                        <td>3</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>36</td>
+                        <td>24</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td> Ingenerie du calcul</td>
+                        <td>3</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>36</td>
+                        <td>24</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="choix"></td>
+                        <td>Systeme dinformation</td>
+                        <td>INFO353</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td>20</td>
+                        <td>18</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>48</td>
+                        <td>32</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="choix"></td>
+                        <td> Algorirhme et progammation 5</td>
+                        <td>INFO354</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>60</td>
+                        <td>40</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="choix"></td>
+                        <td>POO I</td>
+                        <td>INFO355</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td>20</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>48</td>
+                        <td>32</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="choix"></td>
+                        <td>Developpement dapplication web I</td>
+                        <td>IFO356</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td>8</td>
+                        <td></td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>24</td>
+                        <td>16</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="checkbox" name="choix"></td>
+                        <td rowspan="2">Prolog</td>
+                        <td rowspan="2">INFO357</td>
+                        <td rowspan="2">5</td>
+                        <td>Genie logiciel et gestion de projet</td>
+                        <td>2</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td></td>
+                        <td>24</td>
+                        <td>16</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Paradigme de programmation</td>
+                        <td>3</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td></td>
+                        <td>36</td>
+                        <td>24</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="Engras">Recapitulatif</td>
+                        <td></td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>360</td>
+                        <td>240</td>
+                        <td>600</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="boutton">
+                         <div> <br><input type="submit" value="Envoyer">
+                               <input type="reset" value="Effacer">
+                         </div>
+                </div>
+            </form>
+            <p class="nb"> NB:Si vous êtes redoublant, cochez seulement les matières à reprendre <br>
+                Mais si vous avez juste des matières à rependre pour l'année precedente,on vous prie de faire les inscriptions de ces derniers
+                </p>
+        </div>
+    </body>
+</html>

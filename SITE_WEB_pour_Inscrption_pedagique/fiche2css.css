@@ -1,0 +1,104 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color:  hsl(22, 39%, 49%);
+    text-align: center;
+    text-shadow: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#fiche{
+    height: 900px;
+    border: outset;
+}
+
+.titre{
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-left: 100px;
+    width: 350px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.entete{
+    height: 200px;
+}
+
+.photo{
+    float: right;
+    border: 2px solid black;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    margin-right: 80px;
+}
+
+img{
+    float: left;
+}
+
+.div1{
+    height: 100px;
+}
+
+.div2{
+    float: left;
+    margin-right: 400px;
+    margin-left: 20px;
+}
+
+
+.div3{
+    margin-right:15px;
+    float: right;
+}
+
+form{
+    margin-left: 20px;
+}
+
+.semestre{
+    text-align: center;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 950px;
+}
+
+td tr{
+    border: 2px dotted black;
+}
+
+.Engras{
+    font-weight: bold;
+}
+
+.nb{
+    margin-left: 20px;
+    color:red;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color:  hsl(22, 39%, 49%);
+    text-shadow: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+.texte{
+   text-align:justify;
+}
+

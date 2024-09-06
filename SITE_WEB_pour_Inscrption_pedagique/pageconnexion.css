@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/jardinSat.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: #ffffffc0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #6b398c;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #05309d;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #1506e9;
+}
+
+.links a.register {
+    color: #e90606;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #1004f1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: hsl(22, 39%, 49%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: auto;
+    }
+}
